@@ -15,7 +15,7 @@ jobs:
 
 
       - name: Run linter
-        run: npx eslint .
+        run: npx eslint
       - name: Run tests
         run: make test
       - name: Code Coverage
