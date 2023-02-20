@@ -12,13 +12,8 @@ jobs:
 
       - uses: actions/checkout@v3
 
-      - name: Install node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-          cache: 'npm'
-      - name: Install dependencies
-        run: make install
+
+
       - name: Run linter
         run: make lint
       - name: Run tests
@@ -30,4 +25,4 @@ jobs:
         with:
           coverageCommand: make test-coverage
           debug: true
-          
+
