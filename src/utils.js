@@ -2,7 +2,6 @@ import _ from 'lodash';
 
 const stringify = (value, replacer = ' ', spacesCount = 1) => {
   const iter = (currentValue, depth) => {
-    // альтернативный вариант: (typeof currentValue !== 'object' || currentValue === null)
     if (!_.isObject(currentValue)) {
       return `${currentValue}`;
     }

@@ -10,7 +10,6 @@ const genDiff = (filepath1, filepath2) => {
   const keys2 = Object.keys(obj2);
   const allKeys = keys1.concat(keys2);
   const sortKey = _.sortBy(allKeys);
-  // console.log(sortKey);
   const result = {};
   function compare(key) {
     if (obj1[key] === obj2[key]) {
@@ -35,6 +34,4 @@ const genDiff = (filepath1, filepath2) => {
 };
 
 console.log(genDiff('__fixtures__/file1.json', '__fixtures__/file2.json'));
-// getDiff('../__fixtures__/file1.json', '../__fixtures__/file2.json');
-// console.log(getDiff('../__fixtures__/file1.json', '../__fixtures__/file2.json'));
 export default genDiff;
