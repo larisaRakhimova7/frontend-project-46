@@ -23,5 +23,13 @@ const stringify = (value, replacer = ' ', spacesCount = 1) => {
 
   return iter(value, 1);
 };
-
+const value = {
+  '- follow': false,
+  '  host': 'hexlet.io',
+  '- proxy': '123.234.53.22',
+  '- timeout': 50,
+  '+ timeout': 20,
+  '+ verbose': true,
+};
+console.log(stringify(value, ' ', 2));
 export default stringify;

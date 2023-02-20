@@ -30,7 +30,7 @@ const genDiff = (filepath1, filepath2) => {
     }
   }
   sortKey.forEach(compare, {});
-  const resultLine = stringify(result);
+  const resultLine = stringify(result, ' ', 2);
   return resultLine;
 };
 
