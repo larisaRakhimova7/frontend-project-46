@@ -3,7 +3,7 @@ import _ from 'lodash';
 const getIndent = (depth, replacer = ' ', spacesCount = 4) => replacer.repeat(spacesCount * depth - 2);
 const makeString = (value, depth) => {
   if (!_.isObject(value)) {
-    return value;
+    return String(value);
   }
   const keys = Object.keys(value);
   const result = keys.map((key) => {
@@ -13,7 +13,7 @@ const makeString = (value, depth) => {
   return `{\n${result.join('\n')}\n  ${getIndent(depth)}}`;
 };
 
-const stylishFormat = (array) => {
+const stylishFormat = (tree) => {
   const iter = (node, depth = 1) => {
     const result = node.map((element) => {
       if (element.type === 'nested') {
@@ -33,7 +33,7 @@ const stylishFormat = (array) => {
 
     return result.join('\n');
   };
-  return `{\n${iter(array)}\n}`;
+  return `{\n${iter(tree)}\n}`;
 };
 
 export default stylishFormat;

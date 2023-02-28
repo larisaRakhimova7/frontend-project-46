@@ -2,11 +2,11 @@ import yaml from 'js-yaml';
 
 const parser = (file, type) => {
   switch (type) {
-    case 'yml':
+    case '.yml':
       return yaml.load(file);
-    case 'yaml':
+    case '.yaml':
       return yaml.load(file);
-    case 'json':
+    case '.json':
       return JSON.parse(file);
     default:
       throw new Error(`Unknown order state: '${type}'!`);
