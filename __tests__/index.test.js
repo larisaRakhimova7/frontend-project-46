@@ -1,3 +1,4 @@
+import { test, expect } from '@jest/globals';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 import path, { dirname } from 'path';
@@ -10,6 +11,7 @@ const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', 
 const recieveJsonStylish = gendiff(getFixturePath('file1.json'), getFixturePath('file2.json'));
 const expectedStylish = fs.readFileSync(getFixturePath('stylish.txt'), 'utf-8');
 const expectTrim = expectedStylish.trim();
+
 test('gendiff-test-json-stylish', () => {
   expect(recieveJsonStylish).toBe(expectTrim);
 });
