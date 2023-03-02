@@ -1,5 +1,5 @@
 install: install-deps
-	npx simple-git-hooks
+	#npx simple-git-hooks
 
 run:
 	bin/gendiff.js
