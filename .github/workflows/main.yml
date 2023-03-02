@@ -2,7 +2,6 @@ name: GitHub Actions
 
 on:
   - push
-  - pull_request
 
 jobs:
   tests:
@@ -11,7 +10,7 @@ jobs:
 
     steps:
 
-	- uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Install node.js
         uses: actions/setup-node@v3
