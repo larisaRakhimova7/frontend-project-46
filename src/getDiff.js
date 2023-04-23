@@ -12,11 +12,13 @@ const getDiff = (obj1, obj2) => {
     if (!_.has(obj2, key)) {
       return { name: key, type: 'deleted', value: obj1[key] };
     }
+
     if (!_.isEqual(obj1[key], obj2[key])) {
       return {
-        name: key, type: 'updated', value1: obj1[key], value2: obj2[key]
+        name: key, type: 'updated', value1: obj1[key], value2: obj2[key],
       };
     }
+
     return { name: key, type: 'unchanged', value: obj1[key] };
   });
 
