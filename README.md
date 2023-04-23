@@ -4,7 +4,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/80373e25c74e3e722f48/test_coverage)](https://codeclimate.com/github/larisaRakhimova7/frontend-project-46/test_coverage)
 [![GitHub Actions](https://github.com/larisaRakhimova7/frontend-project-46/actions/workflows/main.yml/badge.svg)](https://github.com/larisaRakhimova7/frontend-project-46/actions/workflows/main.yml) 
 
-Description
+Difference Calculator
 ===
 Difference Calculator is a program that determines the difference between two data structures.
 
