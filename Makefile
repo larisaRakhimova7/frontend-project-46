@@ -1,4 +1,6 @@
-install: install-deps
+install:
+	install-deps
+
 run:
 	bin/gendiff.js
 
