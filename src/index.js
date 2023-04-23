@@ -6,11 +6,11 @@ import getFormat from './formatters/index.js';
 
 const getPath = (way) => path.resolve(process.cwd(), way);
 
-const getData = (file) =>{
+const getData = (file) => {
   const absolutePath1 = getPath(file);
   const content = fs.readFileSync(absolutePath1, 'utf-8');
   const getExtension = (file) => path.extname(file);
-  return  parser(content, getExtension(file));
+  return parser(content, getExtension(file));
 };
 
 const genDiff = (file1, file2, format = 'stylish') => {
