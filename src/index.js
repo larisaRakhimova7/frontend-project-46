@@ -5,11 +5,11 @@ import getDiff from './getDiff.js';
 import getFormat from './formatters/index.js';
 
 const getPath = (way) => path.resolve(process.cwd(), way);
+const getExtension = (file) => path.extname(file);
 
 const getData = (file) => {
   const absolutePath1 = getPath(file);
   const content = fs.readFileSync(absolutePath1, 'utf-8');
-  const getExtension = (file) => path.extname(file);
   return parser(content, getExtension(file));
 };
 
