@@ -5,7 +5,7 @@ import getDiff from './getDiff.js';
 import getFormat from './formatters/index.js';
 
 const getPath = (way) => path.resolve(process.cwd(), way);
-const getExtension = (file) => path.extname(file);
+const getExtension = (file) => path.extname(file).slice(1);
 
 const getData = (file) => {
   const absolutePath1 = getPath(file);
