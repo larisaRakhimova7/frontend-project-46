@@ -30,17 +30,17 @@ make install
 
 Usage example:
 ---
-Help:
+Help:  
 
- gendiff --help
- Usage: gendiff [options] <filepath1> <filepath2>
+ gendiff --help  
+ Usage: gendiff [options] <filepath1> <filepath2>  
 
- Compares two configuration files and shows a difference.
+ Compares two configuration files and shows a difference.  
 
- Options:
-   -v, --version        output the current version
-   -f, --format <type>  output format (default: "stylish")
-   -h, --help           display help for command
+ Options:  
+   -v, --version        output the current version  
+   -f, --format <type>  output format (default: "stylish")  
+   -h, --help           display help for command  
 
 **Compare two files with output view *stylish* structure:**
    
