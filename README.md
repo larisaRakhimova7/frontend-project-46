@@ -27,6 +27,7 @@ Copy repository and install the dependencies.
 git clone https://github.com/larisaRakhimova7/frontend-project-46.git
 cd frontend-project-46/
 make install
+
 Usage example:
 ---
 Help:
