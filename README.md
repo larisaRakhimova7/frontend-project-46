@@ -12,13 +12,13 @@ Difference Calculator is a program that determines the difference between two da
 
 Program features:
 ---
-Support for input formats: *json, yaml, yml*.
-Output reports in the form of *stylish*, *plain* or *json*.
++ Support for input formats: *json, yaml, yml*.  
++ Output reports in the form of *stylish*, *plain* or *json*.
 
 Requirements:
 ---
-Node.js v18+ to run,
-Npm package version 8.19.2 or later
++ Node.js v18+ to run,   
++ Npm package version 8.19.2 or later
 
 Deploy 
 ---
