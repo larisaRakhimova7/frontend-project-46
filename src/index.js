@@ -4,7 +4,7 @@ import parser from './parser.js';
 import getDiff from './getDiff.js';
 import getFormat from './formatters/index.js';
 
-const getPath = (way) => path.resolve(process.cwd(), way);
+const getPath = (pathFile) => path.resolve(process.cwd(), pathFile);
 const getExtension = (file) => path.extname(file).slice(1);
 
 const getData = (file) => {
@@ -14,9 +14,9 @@ const getData = (file) => {
 };
 
 const genDiff = (file1, file2, format = 'stylish') => {
-  const obj1 = getData(file1);
-  const obj2 = getData(file2);
-  return getFormat(getDiff(obj1, obj2), format);
+  const data1 = getData(file1);
+  const data2 = getData(file2);
+  return getFormat(getDiff(data1, data2), format);
 };
 
 export default genDiff;

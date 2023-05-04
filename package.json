@@ -23,8 +23,7 @@
   "dependencies": {
     "commander": "^10.0.0",
     "js-yaml": "^4.1.0",
-    "lodash": "^4.17.21",
-    "path": "^0.12.7"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^8.34.0",

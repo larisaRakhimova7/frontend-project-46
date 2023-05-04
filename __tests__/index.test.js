@@ -13,14 +13,14 @@ const expectedPlain = fs.readFileSync(getFixturePath('plain.txt'), 'utf-8');
 const expectedJson = fs.readFileSync(getFixturePath('json.txt'), 'utf-8');
 
 describe.each([
-  ['file1.json', 'file2.json'],
-  ['file1.yaml', 'file2.yml'],
-])('formatter %s', (file1, file2) => {
+  ['json', 'json'],
+  ['yaml', 'yml'],
+])('extension %s', (ext1, ext2) => {
   test.each([
     ['stylish', expectedStylish],
     ['plain', expectedPlain],
     ['json', expectedJson],
-  ])('extension %s test', (format, expected) => {
-    expect(gendiff(getFixturePath(file1), getFixturePath(file2), format)).toBe(expected);
+  ])('formatter %s test', (format, expected) => {
+    expect(gendiff(getFixturePath(`file1.${ext1}`), getFixturePath(`file2.${ext2}`), format)).toBe(expected);
   });
 });

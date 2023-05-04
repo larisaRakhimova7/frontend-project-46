@@ -8,5 +8,5 @@ export default (data, format) => {
     return JSON.parse(data);
   }
 
-  throw new Error(`Unknown order state: '${format}'!`);
+  throw new Error(`Unknown format: '${format}'!`);
 };
