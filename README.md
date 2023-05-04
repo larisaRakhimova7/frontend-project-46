@@ -12,35 +12,43 @@ Difference Calculator is a program that determines the difference between two da
 
 Program features:
 ---
-Support for input formats: json, yaml, yml.
-Output reports in the form of stylish, plain or json.
+Support for input formats: *json, yaml, yml*.
+Output reports in the form of *stylish*, *plain* or *json*.
 
 Requirements:
 ---
-Node.js v18+ to run
+Node.js v18+ to run,
 Npm package version 8.19.2 or later
 
 Deploy 
 ---
 Copy repository and install the dependencies.
 
-git clone https://github.com/larisaRakhimova7/frontend-project-46
+git clone https://github.com/larisaRakhimova7/frontend-project-46.git
 cd frontend-project-46/
 make install
 Usage example:
 ---
-For help, you can use the --help (-h) command:
+Help:
 
-gendiff --help
+ gendiff --help
+ Usage: gendiff [options] <filepath1> <filepath2>
 
-Compare two files with output view *stylish* structure:
+ Compares two configuration files and shows a difference.
+
+ Options:
+   -v, --version        output the current version
+   -f, --format <type>  output format (default: "stylish")
+   -h, --help           display help for command
+
+**Compare two files with output view *stylish* structure:**
    
  
    [![asciicast](https://asciinema.org/a/563532.svg)](https://asciinema.org/a/563532)
    
- Compare two files with output view *plain* structure:
+ **Compare two files with output view *plain* structure:**
    [![asciicast](https://asciinema.org/a/563534.svg)](https://asciinema.org/a/563534)
    
- Compare two files with output view *JSON* format:
+ **Compare two files with output view *JSON* format:**
    [![asciicast](https://asciinema.org/a/563531.svg)](https://asciinema.org/a/563531)
 
